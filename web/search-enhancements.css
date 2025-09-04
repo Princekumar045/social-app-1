@@ -1,0 +1,117 @@
+/* Web-specific enhancements for search page */
+
+/* Search bar focus effects */
+.r-1kfrs79:focus-within {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+  transform: translateY(-1px);
+}
+
+/* User item hover effects */
+.r-1loqt21:hover {
+  background-color: rgba(0,0,0,0.05) !important;
+  transform: translateX(4px);
+}
+
+/* Dark mode user item hover */
+[data-theme="dark"] .r-1loqt21:hover {
+  background-color: rgba(255,255,255,0.05) !important;
+}
+
+/* Explore item hover effects */
+.r-14lw9ot:hover {
+  transform: scale(1.02) !important;
+  opacity: 0.9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+
+/* Video overlay hover effects */
+.r-14lw9ot:hover .r-ttdzmv {
+  opacity: 0.8 !important;
+}
+
+/* Search input focus */
+.r-13awgt0:focus {
+  outline: none !important;
+  background-color: rgba(255,255,255,0.1) !important;
+}
+
+/* Clear button hover */
+.r-1i6wzkk:hover {
+  background-color: rgba(0,0,0,0.1) !important;
+  border-radius: 50% !important;
+}
+
+/* Dark mode clear button hover */
+[data-theme="dark"] .r-1i6wzkk:hover {
+  background-color: rgba(255,255,255,0.1) !important;
+}
+
+/* Smooth scrolling for explore grid */
+.r-1d2f490 {
+  scroll-behavior: smooth !important;
+}
+
+/* Better spacing for web layout */
+@media (min-width: 768px) {
+  .r-1niwhzg {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Wider search bar on desktop */
+  .r-1kfrs79 {
+    max-width: 600px !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Larger explore items on bigger screens */
+  .r-14lw9ot {
+    border-radius: 8px !important;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .r-1loqt21:hover,
+  .r-14lw9ot:hover {
+    transform: none !important;
+  }
+}
+
+/* Loading animation improvements */
+.r-1awozwy {
+  animation: pulse 2s infinite !important;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+/* Search placeholder animation */
+.r-13awgt0::placeholder {
+  transition: color 0.3s ease !important;
+}
+
+.r-13awgt0:focus::placeholder {
+  color: transparent !important;
+}
+
+/* Video element styling for web */
+video {
+  border-radius: inherit !important;
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 480px) {
+  .r-14lw9ot {
+    margin: 1px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .r-14lw9ot {
+    margin: 2px !important;
+  }
+}
